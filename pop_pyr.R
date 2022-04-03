@@ -43,7 +43,7 @@ ggplot(df_plot, aes(x = age_grp, y = count, fill = gndr)) +
   coord_flip() +
   labs(x="", y="", title="Population pyramid of Ottoman Empire in 1897", 
        subtitle = "39 administrative units were covered (app. 60% of the population)",
-       caption="Gürkan, T. (2017). Resmi İstatistiklere Göre Osmanlı Toplum ve Ekonomisi. Türkiye İş Bankası Kültür Yayınları.\n @tahirenesgedik") +
+       caption="Güran, T. (2017). Resmi İstatistiklere Göre Osmanlı Toplum ve Ekonomisi. Türkiye İş Bankası Kültür Yayınları.\n @tahirenesgedik") +
   annotate("text", x = 19, y = 500000, label = "Female", family="Arial Narrow", size=7) +
   annotate("text", x = 19, y = -500000, label = "Male", family="Arial Narrow", size=7) +
   theme_ipsum()
