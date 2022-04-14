@@ -23,7 +23,8 @@ df %>%
   scale_linetype_manual(values=c("solid", "dashed")) +
   geom_point() +
   scale_x_date(breaks = seq.Date(from = min(as.Date("1830-04-08")), to = max(as.Date("1915-04-08")), by = "5 years"), date_labels="%Y",) +
-  scale_y_continuous(trans='log', breaks=c(8,12,16,24,40)) +
+  scale_y_continuous(trans='log', breaks=c(8,12,16,24,40),
+                     sec.axis = sec_axis(trans=~., breaks=c(40,32,24,16))) +
   theme_ipsum() +
   labs(x="", y="Sterling in millions (log scale)", title="Foreign Trade in Ottoman Empire", 
        subtitle = "Şevket Pamuk's Reconstruction (1995)",
